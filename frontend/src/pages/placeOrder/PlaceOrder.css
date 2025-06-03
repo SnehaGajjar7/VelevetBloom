@@ -1,0 +1,113 @@
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 40px;
+    margin: 80px auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+  
+  .place-order-left,
+  .place-order-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .place-order-left .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--main);
+    padding-left: 15px;
+  }
+  
+  .place-order-left input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+    outline: none;
+  }
+  
+  .place-order-left input:focus {
+    border-color: var(--main);
+    box-shadow: 0 0 0 3px var(--light);
+  }
+  
+  .place-order-left .multi-fields {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .cart-total {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  }
+  
+  .cart-total .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--main);
+    padding-left: 15px;
+  }
+  
+  .cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .cart-total-details p:first-child {
+    color: #444;
+  }
+  
+  .cart-total-details p:last-child {
+    font-weight: 600;
+  }
+  
+  .place-order .cart-total button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background-color: var(--main);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
+  
+  .place-order .cart-total button:hover {
+    background-color: white;
+    color: var(--main);
+    border: 1px solid var(--main);
+  }
+  
+  @media (max-width: 768px) {
+    .place-order {
+      flex-direction: column;
+      padding: 20px;
+      gap: 40px;
+    }
+  
+    .place-order-left,
+    .place-order-right {
+      max-width: 100%;
+    }
+  }
+  

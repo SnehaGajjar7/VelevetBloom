@@ -1,0 +1,100 @@
+/* :root {
+  --main: #a65c7a;
+  --main-hover: #8d4f6a;
+  --light-bg: #fff7f9;
+  --border: #ddd;
+  --radius: 10px;
+  
+} */
+
+.delivery-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: var(--main);
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section-label {
+  font-weight: 600;
+  color: var(--main);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  background-color: white;
+  color: var(--main);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-group button:hover,
+.button-group button.active {
+  background-color: var(--main);
+  color: white;
+}
+
+.button-group button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.date-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.dropdown-group {
+  margin-top: 12px;
+}
+
+.dropdown-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--dark);
+}
+
+.summary {
+  padding: 20px;
+ 
+  border-radius: 10px;
+  border: 1px solid var(--dark);
+  font-size: 16px;
+}
+
+.summary h4 {
+  margin-top: 0;
+  color: var(--main);
+}
+
+.summary strong {
+  color: var(--main);
+}

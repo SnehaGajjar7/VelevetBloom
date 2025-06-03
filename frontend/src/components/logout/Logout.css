@@ -1,0 +1,108 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.574);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* === Modal Container === */
+.modal {
+  background: url("https://myflowerland.com/wp-content/uploads/2023/06/Untitled-3-1-1024x538.png") center/cover no-repeat;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: background-image 0.3s ease;
+}
+
+.modal.hovered-confirm {
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/1008604951/thumb/1.jpg?ip=x480");
+}
+
+.modal.hovered-cancel {
+  background-image: url("https://w0.peakpx.com/wallpaper/214/276/HD-wallpaper-roses-in-the-garden-pink-roses-red-love-field-garden.jpg");
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  z-index: 0;
+}
+.modal h3,
+.modal p,
+.modal-buttons {
+  position: relative;
+  z-index: 1;
+}
+
+.modal h3 {
+  font-size: 1.5rem;
+  color: var(--main);
+  margin-bottom: 0.5rem;
+}
+
+.modal p {
+  font-size: 1rem;
+  color: var(--main);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* === Buttons === */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-buttons button:first-child {
+  background: var(--main);
+  color: white;
+  border: 1px solid var(--main);
+}
+
+.modal-buttons button:first-child:hover {
+  background: white;
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+
+.modal-buttons button:last-child {
+  background: white;
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+
+.modal-buttons button:last-child:hover {
+  background: var(--main);
+  color: white;
+  border: 1px solid var(--main);
+}

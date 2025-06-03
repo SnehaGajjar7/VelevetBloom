@@ -1,0 +1,19 @@
+.collection-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--main);
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.collection-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+}

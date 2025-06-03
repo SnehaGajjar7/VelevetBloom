@@ -1,0 +1,44 @@
+.header {
+  height: 35vw;
+  margin: 30px auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  transition: background-image 1s ease-in-out;
+  opacity: 0.9;
+}
+
+.header-contents {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* ensures text is centered */
+  gap: 1.5vw;
+  max-width: 50%;
+  animation: fadeIn 3s;
+}
+.header-contents h2 {
+  font-weight: 500;
+  color: #e3b32f;
+  font-size: max(4vw, 22px);
+}
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+  font-weight: 400;
+}
+.header-contents button {
+  border: none;
+  color: var(--main);
+  font-weight: 700;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  cursor: pointer;
+}
