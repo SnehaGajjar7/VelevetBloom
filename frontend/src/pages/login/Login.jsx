@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import "./login.css";
+import "./Login.css";
 import { assets } from "../../assets/assets";
-import { CartContext } from "../../context/CardContext";
+import { CartContext } from "../../context/CartContext";
 import axios from "axios";
-import NotificationBubble from "../../components/Notification/Notification";
+import NotificationBubble from "../../components/notification/Notification";
 
 const Login = ({ setShowLogin }) => {
   const { url, setToken } = useContext(CartContext);
