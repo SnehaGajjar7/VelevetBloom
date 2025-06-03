@@ -24,6 +24,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+   height: 250px;
 }
 
 /* Hover styles */
