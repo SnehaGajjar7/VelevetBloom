@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import "./Login.css";
+import "./login.css";
 import { assets } from "../../assets/assets";
-import { CartContext } from "../../context/CartContext";
+import { CartContext } from "../../context/CardContext";
 import axios from "axios";
-import NotificationBubble from "../../components/notification/Notification";
+import NotificationBubble from "../../components/Notification/Notification";
 
 const Login = ({ setShowLogin }) => {
   const { url, setToken } = useContext(CartContext);
@@ -64,14 +64,15 @@ const Login = ({ setShowLogin }) => {
       <div className="login-popup">
         <form onSubmit={onLogin} className="login-popup-container">
           <div className="login-popup-title">
-            <h2>
-              {currState}{" "}
+            <h2 className="login-heading">
               <img
-                src="/assets/flower-icon.svg"
+                src={assets.flower_img1}
                 alt="flower"
-                style={{ width: "40px" }}
+                style={{ width: "30px", marginRight: "10px" }}
               />
+              Login
             </h2>
+
             <img
               onClick={() => setShowLogin(false)}
               src={assets.cross_icon}
