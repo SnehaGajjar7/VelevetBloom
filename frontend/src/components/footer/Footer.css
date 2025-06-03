@@ -1,7 +1,13 @@
 .footer {
-    background-color: var(--light); /* soft bloom yellow */
-    color: var(--black);
+    background: url("https://img.freepik.com/free-psd/torn-paper-with-flowers-isolated_23-2151854074.jpg?semt=ais_items_boosted&w=740"); 
+    background-size: cover;
+    color: black;
     padding: 50px 80px 30px;
+    width: 1900px;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 40px;
+    
   }
   
   /* Layout Container */
@@ -22,13 +28,16 @@
   
   /* Sections */
   .footer-brand h2 {
-    color: var(--main);
+    color: black;
     margin-bottom: 10px;
   }
   
+  .footer-brand p{
+    color: black;
+  }
   .footer-links h4,
   .footer-contact h4 {
-    color: var(--main);
+    color: black;
     margin-bottom: 10px;
   }
   
@@ -44,7 +53,7 @@
   
   .footer-links ul li a {
     text-decoration: none;
-    color: var(--black);
+    color: black;
     transition: color 0.2s;
   }
   
@@ -55,6 +64,7 @@
   /* Contact section */
   .footer-contact p {
     margin: 5px 0;
+    color: black;
   }
   
   /* Bottom line */
